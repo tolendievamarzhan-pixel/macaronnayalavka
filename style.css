@@ -1,9 +1,9 @@
 :root {
   --bg: #FAF3EE;
   --card: #FFF7F4;
-  --primary:  #8b644ffd;
+  --primary:  #a57961fd;
   --accent: #8B5E3C;
-  --hover: #8b644ffd;
+  --hover: #a57c65fd;
 }
 
 body {
