@@ -1,0 +1,129 @@
+:root {
+  --bg: #FAF3EE;
+  --card: #FFF7F4;
+  --primary:  #8b644ffd;
+  --accent: #8B5E3C;
+  --hover: #8b644ffd;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg);
+  color: var(--accent);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Навбар */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  padding: 15px 50px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: var(--hover);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, var(--card), var(--bg));
+  border-radius: 25px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(215, 184, 154, 0.3);
+}
+.hero h1 {
+  font-size: 2.3em;
+  color: var(--accent);
+}
+.hero span {
+  color: var(--primary);
+}
+.hero p {
+  color: var(--accent);
+  font-size: 18px;
+  margin-top: 10px;
+}
+.btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--hover);
+  transform: translateY(-2px);
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 60px 20px;
+}
+
+.feature-card {
+  background: var(--card);
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  width: 260px;
+  text-align: center;
+  padding: 25px;
+  transition: 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--hover);
+  color: white;
+}
+.feature-card img {
+  width: 160px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 30px 20px 20px;
+}
